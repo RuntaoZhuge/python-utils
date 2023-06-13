@@ -2,6 +2,8 @@ import hashlib
 from datetime import datetime
 from decimal import Decimal
 
+def remove_prefix(string):
+    return string.rsplit("/", 1)[-1]
 
 def format_date(delta_date):
     if delta_date is None:
